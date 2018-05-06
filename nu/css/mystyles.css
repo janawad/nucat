@@ -1,0 +1,31 @@
+/*YOUR CUSTOM STYLES*/
+
+.sup-remainder{
+	background-color: #d10a11; 
+	color:#fff; 
+	padding: 3px 6px 3px 6px; 
+	border-radius: 7px; 
+	margin-left: -8px;
+}
+
+.bg-blue{
+	background-color: #548ac4;
+	color: #fff;
+}
+
+.low-font{
+	font-size: 12px;
+	color: #938493;
+}
+
+.label-box{
+	border: 1px solid ;
+	background-color: #76c1f7;
+	color: #fff;
+	border-radius: 5px;
+	padding: 3px 5px 3px 5px;
+}
+.navbar-nav li
+{
+width:100% !important;
+}

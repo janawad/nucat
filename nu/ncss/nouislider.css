@@ -1,0 +1,184 @@
+
+.noUi-target, .noUi-target * {
+    -moz-user-select: none;
+    box-sizing: border-box;
+}
+.noUi-target {
+    position: relative;
+}
+.noUi-base {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.noUi-connect {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.noUi-origin {
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.noUi-handle {
+    position: relative;
+    z-index: 1;
+}
+.noUi-state-tap .noUi-connect, .noUi-state-tap .noUi-origin {
+    -webkit-transition: top 0.3s ease 0s, right 0.3s ease 0s, bottom 0.3s ease 0s, left 0.3s ease 0s;
+    transition: top 0.3s ease 0s, right 0.3s ease 0s, bottom 0.3s ease 0s, left 0.3s ease 0s;
+}
+.noUi-state-drag * {
+    cursor: inherit !important;
+}
+.noUi-base, .noUi-handle {
+}
+.noUi-horizontal {
+    height: 10px;
+    cursor: pointer;
+}
+.noUi-horizontal .noUi-handle {
+  background-color: #96b6cd;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 3px 0 #ddd;
+  cursor: pointer;
+  height: 20px;
+  left: -10px;
+  top: -5px;
+  width: 20px;
+}
+.noUi-vertical {
+    width: 18px;
+}
+.noUi-vertical .noUi-handle {
+    height: 34px;
+    left: -6px;
+    top: -17px;
+    width: 28px;
+}
+.noUi-target {
+  background-color: #e3e5e6;
+  margin: 20px 0;
+}
+.noUi-connect {
+    background-color: #96b6ce;
+}
+.noUi-draggable {
+    cursor: ew-resize;
+}
+.noUi-vertical .noUi-draggable {
+    cursor: ns-resize;
+}
+.noUi-active {
+    box-shadow: 0 0 1px #fff inset, 0 1px 7px #ddd inset, 0 3px 6px -3px #bbb;
+}
+.noUi-vertical .noUi-handle::before, .noUi-vertical .noUi-handle::after {
+    height: 1px;
+    left: 6px;
+    top: 14px;
+    width: 14px;
+}
+.noUi-vertical .noUi-handle::after {
+    top: 17px;
+}
+[disabled] .noUi-connect {
+    background: #b8b8b8 none repeat scroll 0 0;
+}
+.noUi-target[disabled], .noUi-handle[disabled], [disabled] .noUi-handle {
+    cursor: not-allowed;
+}
+.noUi-pips, .noUi-pips * {
+    box-sizing: border-box;
+}
+.noUi-pips {
+    color: #999;
+    position: absolute;
+}
+.noUi-value {
+    position: absolute;
+    text-align: center;
+}
+.noUi-value-sub {
+    color: #ccc;
+    font-size: 10px;
+}
+.noUi-marker {
+    background: #ccc none repeat scroll 0 0;
+    position: absolute;
+}
+.noUi-marker-sub {
+    background: #aaa none repeat scroll 0 0;
+}
+.noUi-marker-large {
+    background: #aaa none repeat scroll 0 0;
+}
+.noUi-pips-horizontal {
+    height: 80px;
+    left: 0;
+    padding: 10px 0;
+    top: 100%;
+    width: 100%;
+}
+.noUi-value-horizontal {
+    -webkit-transform: translate3d(-50%, 50%, 0px);
+            transform: translate3d(-50%, 50%, 0px);
+}
+.noUi-marker-horizontal.noUi-marker {
+    height: 5px;
+    margin-left: -1px;
+    width: 2px;
+}
+.noUi-marker-horizontal.noUi-marker-sub {
+    height: 10px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+    height: 15px;
+}
+.noUi-pips-vertical {
+    height: 100%;
+    left: 100%;
+    padding: 0 10px;
+    top: 0;
+}
+.noUi-value-vertical {
+    padding-left: 25px;
+    -webkit-transform: translate3d(0px, 50%, 0px);
+            transform: translate3d(0px, 50%, 0px);
+}
+.noUi-marker-vertical.noUi-marker {
+    height: 2px;
+    margin-top: -1px;
+    width: 5px;
+}
+.noUi-marker-vertical.noUi-marker-sub {
+    width: 10px;
+}
+.noUi-marker-vertical.noUi-marker-large {
+    width: 15px;
+}
+.noUi-tooltip {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    color: #000;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+.noUi-horizontal .noUi-tooltip {
+    bottom: 120%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+}
+.noUi-vertical .noUi-tooltip {
+    right: 120%;
+    top: 50%;
+    -webkit-transform: translate(0px, -50%);
+            transform: translate(0px, -50%);
+}
